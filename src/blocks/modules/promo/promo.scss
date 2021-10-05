@@ -1,0 +1,73 @@
+.sidepanal {
+  position: fixed;
+  top: 230px;
+  left: 50px;
+  width: 20px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 3;
+  &__link {
+    svg path {     
+      color: #000000;
+    }
+    &:hover {
+      svg path {
+        color: $main-color;
+      }
+    }
+  }
+  &__line {
+    margin: 0 auto;
+    background-color: #000000;
+    height: 70px;
+    width: 2px;
+  }
+  &__text {
+    height: 150px;
+    width: 20px;
+    span {
+      font-size: 17px;
+      display: block;
+      width: 150px;
+      height: 20px;
+      transform: rotate(-90deg) translate(-41%, -65px);
+    }
+  }
+}
+
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("../img/Background.jpg") no-repeat 50% / cover;
+  padding-top: 205px;
+  &__title {
+    width: 532px;
+    margin-top: 10px;
+  }
+  &__subtitle {
+    position: relative;
+    padding-left: 10px;
+    @include before_circle;
+    z-index: 2;
+  }
+  &__btns {
+    margin-top: 25px;
+    display: flex;
+    width: 258px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    line-height: 0px;
+    font-weight: 900;
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}

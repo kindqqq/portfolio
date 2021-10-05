@@ -1,0 +1,17 @@
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 60px;
+  &_fz_14{
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &_fz18{
+    font-size: 18px;
+    line-height: 24px;
+  }
+    &_fz48{
+    font-size: 48px;
+  }
+}

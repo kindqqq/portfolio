@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,MADI,CACJ,EAAE,CAAA;EACA,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "promo.scss"
+    ],
+    "names": [],
+    "file": "promo.css"
+}
