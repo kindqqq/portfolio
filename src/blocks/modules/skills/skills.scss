@@ -1,36 +1,157 @@
 .skills {
-		&__title {}
-		&__subtitle {}
-		&__skills {}
-		&__items {}
-		&__info-title {}
-		&__info-subtitle {}
-		&__info-text {}
-    &__info-1 {}
-		&__info-2 {}
-		&__info-3 {}
-		&__info-4 {}
-		&__info-5 {}
-		&__info-6 {}
-		&__info-7 {}
-		&__info-8 {}
-		&__stats {}
-		&__points {}
-		&__intor-title {}
-		&__intor-interest {}
-		&__intor-line {}
-    &__intor-1 {}
-		&__intor-2 {}
-		&__intor-3 {}
-		&__intor-4 {}
-		&__intor-5 {}
-		&__intor-6 {}
+  margin-top: 120px;
+  &__title {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  &__subtitle {
+    margin-top: 6px;
+    text-align: center;
+  }
+  &__skills {
+    display: grid;
+    grid-template: repeat(2, minmax(270px, auto)) / repeat(4, 270px);
+    grid-auto-rows: minmax(270px, auto);
+    justify-content: center;
+    gap: 13px;
+  }
+  &__items {
+    border: 1px solid #000000;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 65px 51px auto;
+  }
+  &__info-svg {
+    align-self: center;
+  }
+  &__info-subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    align-self: center;
+    font-weight: 900;
+  }
+  &__info-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  &__info-1 {
+  }
+  &__info-2 {
+  }
+  &__info-3 {
+    .js {
+      // position: relative;
+      font-size: 41px;
+      z-index: 10;
+      margin-top: 22px;
+      margin-left: 14px;
+      font-weight: 700;
+      &:before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        margin-left: -14px;
+        margin-top: -23px;
+        width: 65px;
+        height: 65px;
+        background-color: #f7df1e;
+      }
+    }
+  }
+  &__info-4 {
+  }
+  &__info-5 {
+  }
+  &__info-6 {
+  }
+  &__info-7 {
+  }
+  &__info-8 {
+  }
+  &__stats {
+    margin-top: 120px;
+    display: grid;
+    grid-template: repeat(2, 70px) / repeat(3, 350px);
+    gap: 30px 45px;
+    justify-content: center;
+  }
+  &__points {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__intor-title {
+    padding-left: 14px;
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    @include before_circle;
+    &:before {
+      top: -9px;
+    }
+  }
+  &__intor-interest {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__line{
+    position: relative;
+    height: 14px;
+    background: #e8e4de;
+    border-radius: 4px;
+    span {
+      position: absolute;
+      content: "";
+      height: 14px;
+      background: $main-color;
+      border-radius: 4px;
+    }
+  }
+  &__intor-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  &__intor-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  &__intor-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  &__intor-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  &__intor-4 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  &__intor-5 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  &__intor-6 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .divider {
+    margin: 20px auto 60px auto;
+  }
 }
 .container {
 }
 .title {
-		&_fz16 {}
-		&_fz36 {}
-}
-.divider {
+  &_fz16 {
+  }
+  &_fz36 {
+  }
 }

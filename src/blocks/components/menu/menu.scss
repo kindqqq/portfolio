@@ -50,6 +50,10 @@
     position: absolute;
     top: 24px;
     right: 25px;
+    &:hover {
+      transition: 0.3s;
+      transform: scale(1.1);
+    }
   }
   &__list {
     list-style-type: none;

@@ -94,6 +94,12 @@
     padding: 12px 0 0 43px;
     font-size: 12px;
     line-height: 18px;
+    a{
+      color: #000000;
+      &:hover{
+        color: $main-color;
+      }
+    }
   }
 }
 .title {
