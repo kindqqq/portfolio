@@ -94,6 +94,10 @@
     left: 50%;
     transform: translateX(-50%);
     width: 90px;
+    a:hover {
+      transition: 0.5s all;
+      transform: rotate(360deg);
+    }
   }
   &__overlay {
     position: fixed;
