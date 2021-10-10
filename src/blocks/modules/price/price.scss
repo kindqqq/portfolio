@@ -1,0 +1,84 @@
+.price {
+  padding-top: 72px;
+  &__title {
+    position: relative;
+    text-align: center;
+    @include before_circle;
+    &:before {
+      left: 50%;
+      top: -7px;
+      transform: translateX(-50%);
+    }
+  }
+  &__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template: repeat(3, 44px) / repeat(2, 343px);
+    gap: 15px 306px;
+    justify-content: center;
+  }
+  &__item {
+    display: grid;
+    grid-template: repeat(2, 21px) / 222px 121px;
+    row-gap: 5px;
+  }
+  &__service {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+    @include before_circle;
+    &:before {
+      width: 15px;
+      height: 15px;
+      left: -25px;
+      top: 2px;
+    }
+  }
+  &__price {
+    justify-self: end;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__descr {
+    white-space: nowrap;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .divider {
+    margin-top: 31px;
+  }
+}
+
+.title {
+  &_fz16 {
+  }
+}
+
+.item {
+  &__price1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  &__price2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  &__price3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+  &__price4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+  &__price5 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+  &__price6 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+}
