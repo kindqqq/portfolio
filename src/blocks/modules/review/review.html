@@ -2,15 +2,25 @@
   <div class="container">
     <div class="review__grid">
       <div class="review__gridElem__img pos_r">
-        <img src="../img/she.jpg" alt="she" />
+        <!-- <img
+          srcset="../img/she_min.jpg 300w, ../img/she.jpg 400w"
+          sizes="(max-width: 576px) 300px, (min-width: 577px) 400px,"
+          src="../img/she.jpg"
+          alt="she"
+        /> -->
+        <picture>
+          <source media="(max-width: 576px)" srcset="../img/she_min.jpg">
+          <source media="(min-width: 577px)" srcset="../img/she.jpg">
+          <img src="../img/she.jpg" alt="photo">
+        </picture>
+        <!-- <picture>
+          <source type="image/webp" srcset="../img/she_min.webp" />
+          <img src="../img/she.jpg" alt="photo" />
+        </picture> -->
       </div>
       <div class="review__gridElem__about pos_r">
-        <h3 class="title title_fz18">
-          Про меня
-        </h3>
-        <h2 class="title title_fz36">
-          Меня зовут Алексей
-        </h2>
+        <h3 class="title title_fz18">Про меня</h3>
+        <h2 class="title title_fz36">Меня зовут Алексей</h2>
         <div class="divider"></div>
         <div class="review__decr_fz14">
           Веб разработкой занимаюсь 8 месяцев, начал я с Python так как все
@@ -20,7 +30,6 @@
           JS. Углубляясь во фронтенд я осознал что мне он нравится больше и
           решил остановится на ближайшие лет 5-7 на фронтенде. Горю желанием
           развиваться и приносить пользу работодателю!
-          
         </div>
       </div>
       <div class="review__gridElem__info">
@@ -78,11 +87,9 @@
             <div class="review__decr_fz12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  
             </div>
           </div>
         </div>
-      
       </div>
     </div>
   </div>
